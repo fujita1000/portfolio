@@ -1,0 +1,61 @@
+////////////////
+/// header
+////////////////
+.header {
+  width: 25vw;
+  position: fixed;
+  height: 100vw;
+  background-color:#4e4444;
+  text-align: center;
+  padding-top: 50px;
+}
+.nav {
+  font-size: 50px;
+  color: #fff;
+}
+
+.spNav {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+      padding-top: 40px;
+    }
+  
+    .nav {
+      font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+      padding-top: 30px;
+    }
+  
+    .nav {
+      font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+.header {
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: #4e4444;
+    padding-top: 13px;  
+    font-weight: bold;
+  }
+
+  .nav {
+    display: none;
+  }
+  .spNav {
+    display: flex;
+    color: #fff;  
+  }
+  .spNav_item{  
+     margin: 0 auto;
+  }
+}
