@@ -1,11 +1,13 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from '../styles/contact.module.scss'
 import { useState } from 'react'
 
-
-export default function Contact() {
-
+export default function Contact({ href }) {
+ const router = useRouter()
+   const handleClick = (e) => {
+    e.preventDefault()
+    router.push("./contact_end")
+  }
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -65,10 +67,11 @@ export default function Contact() {
           <label htmlFor='message'>Message</label>
           <input type='text' onChange={(e)=>{setMessage(e.target.value)}} name='message' className={styles.inputField} required id="message"/>
         </div>
+    <a href={href} onClick={handleClick}>    
         <button type='submit' onClick={(e)=>{handleSubmit(e)}} >送信する</button>
-
+    </a>
       </form >
-      
     </div>
   )
-}
+  }
+

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from '../styles/header.module.scss'
 
 const Header = () => {
@@ -5,16 +6,18 @@ const Header = () => {
   <>
     <header className={style.header}>
         <nav className={style.nav}>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about"> ABOUT ME</a></li>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#home"><a>HOME</a></Link></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#about"><a>ABOUT ME</a></Link></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#work"><a>WORK</a></Link></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#skill"><a>SKILL</a></Link></li>
+          <li className={style.spNav_item}><Link href="./contact"><a>CONTACT</a></Link></li>
         </nav>
         <nav className={style.spNav}>
-          <li className={style.spNav_item}><a href="#home">HOME</a></li>
-          <li className={style.spNav_item}><a href="#about"> ABOUT ME</a></li>
-          <li className={style.spNav_item}><a href="#work">WORK</a></li>
-          <li className={style.spNav_item}><a href="#contact">CONTACT</a></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#home"><a>HOME</a></Link></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#about"><a>ABOUT ME</a></Link></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#work"><a>WORK</a></Link></li>
+          <li className={style.spNav_item}><Link href="http://localhost:3000/#skill"><a>SKILL</a></Link></li>
+          <li className={style.spNav_item}><Link href="./contact"><a>CONTACT</a></Link></li>
         </nav>
       </header>
       </>  

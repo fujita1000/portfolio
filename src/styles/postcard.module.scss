@@ -1,0 +1,17 @@
+.container{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  span{
+    font-size: 40px;
+  }
+  .image{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (max-width: 425px) {}

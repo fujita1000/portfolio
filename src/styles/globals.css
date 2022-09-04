@@ -5,6 +5,7 @@ body {
   list-style-type: none;
   text-decoration: none;
   font-family: ＭＳ 明朝, 游明朝, Yu Mincho, YuMincho, Hiragino Mincho Pro, serif;
+  width: 100%;
   overflow-x: hidden;
 }
 

@@ -1,5 +1,4 @@
 import { createTransport } from 'nodemailer';
-import { useRouter } from "next/router";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function (req, res) {
@@ -21,7 +20,7 @@ export default function (req, res) {
         to: `${req.body.email}`,
         subject: `お問い合わせありがとうございました ${req.body.name}様`,
         text: `お問い合わせを受け付けました。回答をお待ちください。`,
-        html: `<div>お問合せを受け付けました。回答をお待ちください。<br>原文:<br>${req.body.message}</div><p>送信元: ${req.body.email}</p>`
+        html: `<div>お問い合わせを受け付けました。回答をお待ちください。<br>原文:<br>${req.body.message}</div><p>送信元: ${req.body.email}</p>`
     }
   
     transporter.sendMail(mailData, function (err, info) {
@@ -33,7 +32,4 @@ export default function (req, res) {
   
     console.log(req.body)
     res.send('success')
-
-    const router = useRouter();  
-    const confirmationScreenVisible = router.query?.success && router.query.success === "true";
   }
