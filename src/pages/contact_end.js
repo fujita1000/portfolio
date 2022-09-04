@@ -1,4 +1,4 @@
-import styles from '../styles/contact_end.module.css'
+import styles from '../styles/contact_end.module.scss'
 
 const ContactEnd = () => {
   return(

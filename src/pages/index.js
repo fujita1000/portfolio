@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import style from '../styles/style.module.css'
+import style from '../styles/style.module.scss'
 
 import fs from 'fs';
 import matter from 'gray-matter';
