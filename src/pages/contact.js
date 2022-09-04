@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/contact.module.scss'
+import styles from '../styles/contact.module.css'
 import { useState } from 'react'
 
 
