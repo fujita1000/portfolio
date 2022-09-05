@@ -57,8 +57,8 @@ export default function Contact({ href }) {
         <div className={styles.inputGroup} >
           <label htmlFor='email'>Email</label>
           <input type='email' onChange={(e)=>{setEmail(e.target.value)}} name='email' className={styles.inputField} required
-              minLength="10"
-    maxLength="20"
+              minLength="5"
+    maxLength="40"
     id="email"
     />
         </div>

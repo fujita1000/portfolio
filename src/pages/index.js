@@ -32,9 +32,14 @@ export const getStaticProps = () => {
     };
   });
 
+    const sortedPosts = posts.sort((postA, postB) =>
+    new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1
+  );
+  
   return {
     props: {
       posts,
+      posts: sortedPosts,
     },
   };
 };
@@ -44,16 +49,6 @@ export const getStaticProps = () => {
 const Home = ({posts}) => {   
     return (
     <>     
-      <Head>
-      <meta charset="utf-8" />
-      <title>藤田 直生|NAO FUJITA</title>
-      <meta name="description" content="23卒の就活性の藤田直生のポートフォリオです。GSAPとjQuaryを使ったアニメーションが得意です。採用よろしくお願いいたします。" />
-      <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="keywords" content="ポートフォリオ 藤田直生 このmetaタグSEOに影響しないゴミタグらしい" />
-      <meta name="google" content="nositelinkssearchbox" />
-      </Head>
-
 <div className={style.container}>
 <div className={style.container2}>
 
