@@ -18,9 +18,9 @@ export default function (req, res) {
   const mailData = {
         from: process.env.NEXT_PUBLIC_MAIL_USER,
         to: `${req.body.email}`,
-        subject: `${req.body.name}様よりお問い合わせがきました`,
-        text: `確認してください`,
-        html: `<br>原文:<br>${req.body.message}</div><p>送信元: ${req.body.email}</p>`
+        subject: `お問い合わせありがとうございました ${req.body.name}様`,
+        text: `お問い合わせを受け付けました。回答をお待ちください。`,
+        html: `<div>お問い合わせを受け付けました。回答をお待ちください。<br>原文:<br>${req.body.message}</div><p>送信元: ${req.body.email}</p>`
     }
   
     transporter.sendMail(mailData, function (err, info) {

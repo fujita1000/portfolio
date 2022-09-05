@@ -5,7 +5,7 @@ export default{
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://localhost:3000/',
+    url: 'https://portfolio-8dot71vt5-fujita1000.vercel.app/',
     site_name: '藤田 直生|NAO FUJITA',
   },
   twitter: {
