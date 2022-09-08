@@ -1,14 +1,13 @@
 ---
-title: '三個目のポートフォリオ'
+title: '二個目のポートフォリオ'
 date: '2022-01-01'
 description: 'ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。'
+link : https://ejje.weblio.jp/content/a
 image : demo.jpeg
+image2 : demo.jpeg
+image3 : demo.jpeg
+image4 : demo.jpeg
 ---
 
-Next.js を使って Markdown のブログサイトの構築を一から行なっていきます。
+ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。<br><br>
 
-## Next.js の準備
-
-### プロジェクトの作成
-
-npx create-next-app コマンドを利用して Next.js プロジェクトの作成を行います。

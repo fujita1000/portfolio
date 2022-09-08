@@ -61,16 +61,15 @@ const Home = ({posts}) => {
         <h2>ABOUT ME</h2>
         <div className={style.under_line}></div>
         <p className={style.sec2_p}>東北電子専門学校WEBクリエーター科でWeb制作の勉強をしております。<br/>
-          jQueryとGSAPを用いたアニメーションが得意です。長所は新しいことが好きで、<br/>
-          新しい技術に抵抗感なく適応できることです。</p>
+          jQueryかGSAPを用いたアニメーションが得意です。長所は新しいことが好きで、<br/>
+          新しい技術に抵抗感なく適応できることです。このページはNext.jsで作りました。</p>
         <div className={style.sec2_flex}>
-          <Image src="/me.jpeg" alt="藤田の画像" width={150} height={190}></Image>
-          <p>氏名 :<br/>所在地 :<br/>お問い合わせ :<br/>スキル :<br/> </p>
-          <p>藤田 直生 Fujita Nao<br/>宮城県仙台市<br/>fujitanao.work@gmail.com<br/>Web制作におけるデザイン、HTML・CSS/SCSS・JSを用いたコーディング、
-          <br/>スマートフォンサイトの作成。
+          <Image src="/me.jpeg" alt="藤田の画像" width={150} height={190} className={style.me_img}></Image>
+          <div></div>
+          <p className={style.sec2_p_box}>氏名:<br/><br/>所在地:<br/><br/>お問い合わせ:<br/><br/>スキル:<br/><br/> </p>
+          <p className={style.sec2_p_box2}>藤田 直生 Fujita Nao<br/><br/>宮城県仙台市<br/><br/>fujitanao.work@gmail.com<br/><br/>Web制作におけるデザイン、HTML・CSS/SCSS・JSを用いたコーディング、スマートフォンサイトの作成。
           <br/>Excel PowerPoint Word を使った資料の作成。
-          <br/>Adode Illustrator Photoshop XD premiumPro Dreamweaverこれらの活用。</p>
-        </div>
+          <br/>Adode Illustrator Photoshop XD premiumPro Dreamweaverこれらの活用。</p>   </div>
       </section>
 
       <section className={style.sec3} id="work">

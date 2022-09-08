@@ -39,7 +39,7 @@ const Post = ({ frontMatter, content }) => {
           description: frontMatter.description,
           images: [
             {
-              url: `https://portfolio-fujita.vercel.app/${frontMatter.image}`,
+              url: `http://localhost:3000/${frontMatter.image}`,
               width: 1200,
               height: 700,
               alt: frontMatter.title,
@@ -55,10 +55,48 @@ const Post = ({ frontMatter, content }) => {
           width={1200}
           height={700}
           alt={frontMatter.title}
+          className={style.slug_image}
         />
-      <h1 className="mt-12">{frontMatter.title}</h1>
-      <span>{frontMatter.date}</span>
- <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+      <h1 className={style.slug_h1}>{frontMatter.title}</h1>
+      <span className={style.slug_data}>{frontMatter.date}</span>
+ <div className={style.slug_body} dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+
+<div className={style.link}>
+   <a href={frontMatter.link}>{frontMatter.link}</a>
+</div>
+
+
+<div  className={style.slug_image2}>
+         <Image
+          src={`/${frontMatter.image2}`}
+          width={1200}
+          height={700}
+          alt={frontMatter.title}
+        />  
+</div>
+
+<div  className={style.slug_image3}>
+         <Image
+          src={`/${frontMatter.image3}`}
+          width={1200}
+          height={700}
+          alt={frontMatter.title}
+        />  
+</div>
+
+<div  className={style.slug_image4}>
+         <Image
+          src={`/${frontMatter.image4}`}
+          width={1200}
+          height={700}
+          alt={frontMatter.title}
+        />  
+</div>
+
+<div className={style.link2}>
+   <a href={frontMatter.link}>{frontMatter.link}</a>
+</div>
+
     </div>
     </div> 
     </>

@@ -59,6 +59,12 @@
   .sec2_flex{
     display: flex;
   }
+  .sec2_p_box{
+    width: 200px;
+  }
+  .sec2_p_box2 {
+      width: 600px;
+    }
 }
 
 /* sec-3 */
@@ -95,8 +101,255 @@
   }
 }
 @media only screen and (max-width: 1200px) {
+
+
+
+  .container2 {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+
+  /* sec-1 */
+  .sec1 {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  /* sec-2 */
+  .sec2 {
+
+    .sec2_p_box {
+      width: 200px;
+    }
+
+    .sec2_p_box2 {
+      width: 500px;
+    }
+  }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+  /* 共通設定 */
+  
+    .container2 {
+      width: 400px;
+      margin: 0 auto;
+    }
+  
+    .under_line {
+      width: 100%;
+      border-bottom: 2px #fff solid;
+    }
+  
+    /* sec-1 */
+    .sec1 {
+      text-align: center;
+      padding-top: 20px;
+  
+      h1 {
+        font-size: 50px;
+      }
+  
+      h2 {
+        font-size: 30px;
+      }
+    }
+  
+    /* sec-2 */
+    .sec2 {
+      padding-top: 30px;
+  
+      h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+  
+      p {
+        font-size: 16px;
+        padding-left: 20px;
+      }
+  
+      .sec2_p {
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+      }
+  
+      .sec2_flex {
+        margin-top: 20px;
+display: grid;
+  height: 400px;
+  grid-template-columns: 150px 150px ;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+      }
+
+      .sec2_p_box {
+        width: 200px;
+          padding-left: 0px;
+      }
+      .sec2_p_box2 {
+        width: 280px;
+        margin-left: -50px;
+              padding-left: 0px;
+      }
+    }
+  
+    /* sec-3 */
+    .sec3 {
+      padding-top: 50px;
+  
+      h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+    }
+  
+    /* sec-4 */
+    .sec4 {
+      padding-top: 30px;
+      padding-bottom: 60px;
+  
+      h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+      }
+  
+      .sec4_flex {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  
+    /* sec-5 */
+    .sec5 {
+      border: solid 3px #fff;
+      padding: 20px;
+      margin-bottom: 100px;
+  
+      h2 {
+        font-size: 50px;
+        text-align: center;
+      }
+    }
 }
 @media only screen and (max-width: 425px) {
+  /* 共通設定 */
+  
+    .container {
+      width: 100vw;
+      margin: 0;
+    }
+  
+    .container2 {
+      width: 350px;
+      margin: 0 auto;
+    }
+  
+    .under_line {
+      width: 100%;
+      border-bottom: 2px #fff solid;
+    }
+  
+    /* sec-1 */
+    .sec1 {
+      text-align: center;
+      padding-top: 60px;
+  
+      h1 {
+        font-size: 40px;
+      }
+  
+      h2 {
+        font-size: 30px;
+      }
+    }
+  
+    /* sec-2 */
+    .sec2 {
+      padding-top: 50px;
+  
+      h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+  
+      p {
+        font-size: 16px;
+        padding-left: 20px;
+      }
+  
+      .sec2_p {
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+      }
+    .sec2_flex {
+      margin-top: 20px;
+      display: grid;
+      height: 400px;
+      grid-template-columns: 150px 150px;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .sec2_p_box {
+      width: 200px;
+      padding-left: 0px;
+    }
+
+    .sec2_p_box2 {
+      width: 230px;
+      margin-left: -50px;
+      padding-left: 0px;
+    }
+   .me_img{
+    z-index: 0;
+   }
+    }
+  
+    /* sec-3 */
+    .sec3 {
+      padding-top: 50px;
+  
+      h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+    }
+  
+    /* sec-4 */
+    .sec4 {
+      padding-top: 40px;
+      padding-bottom: 70px;
+  
+      h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+      }
+  
+      .sec4_flex {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  
+    /* sec-5 */
+    .sec5 {
+      border: solid 3px #fff;
+      padding: 20px;
+      margin-bottom: 70px;
+  
+      h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+    }
 }
