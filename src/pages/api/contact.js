@@ -4,7 +4,6 @@ import { createTransport } from 'nodemailer';
 export default function (req, res) {
 
     require('dotenv').config()
-
     const transporter = createTransport({
       port: 465,     
       host: "smtp.gmail.com",  

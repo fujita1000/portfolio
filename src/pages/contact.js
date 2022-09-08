@@ -9,14 +9,7 @@ export default function Contact({ href }) {
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
-
-    let data = {
-        name,
-        email,
-        message,
-        submitted
-    }
+  const handleSubmit = async (e) => {
 
     if (!name,!email,!message) {
       alert('全ての項目をご記載ください')
@@ -26,8 +19,14 @@ export default function Contact({ href }) {
     e.preventDefault()
     console.log('Sending')
 
+    let data = {
+        name,
+        email,
+        message,
+        submitted
+    }
 
-   fetch('/api/contact', {
+   await fetch('/api/contact', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -45,8 +44,7 @@ export default function Contact({ href }) {
         }
     })
  
- 
-        router.push("./contact_end");
+        await router.push("./contact_end");
   }   
  }
 
