@@ -10,8 +10,50 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+.container {
+    padding-top: 20px;
+    padding-bottom: 40px;
 
-@media only screen and (max-width: 800px) {}
+    span {
+      font-size: 35px;
+    }
 
-@media only screen and (max-width: 425px) {}
+    .image {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+.container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    span {
+      font-size: 30px;
+    }
+
+    .image {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+  
+      span {
+        font-size: 25px;
+      }
+  
+      .image {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+}

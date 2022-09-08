@@ -20,8 +20,32 @@
   font-size: 50px;
   padding-top: 50px;
 }
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+  .container {
+      background-color: var(--bg);
+      color: #fff;
+      text-align: center;
+      font-size: 35px;
+      padding-top: 50px;
+    }
+}
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+    .container {
+        background-color: var(--bg);
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 30px;
+      }
+}
 
-@media only screen and (max-width: 425px) {}
+@media only screen and (max-width: 425px) {
+  .container {
+      width: 100vw;
+      margin-left: 0vw;
+      height: 100vw;
+      font-size: 16px;
+      padding-top: 100px;
+    }
+}
