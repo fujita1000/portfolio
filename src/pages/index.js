@@ -1,7 +1,11 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import style from '../styles/style.module.scss'
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { useEffect } from 'react'
+
 import { TbBrandJavascript } from "react-icons/tb"
 import { AiOutlineHtml5 } from "react-icons/ai"
 import { TbBrandCss3 } from "react-icons/tb"
@@ -20,7 +24,10 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import PostCard from '../components/PostCard';
 
+
+
 export const getStaticProps = () => {
+
   const files = fs.readdirSync('posts');
   const posts = files.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '');
@@ -44,17 +51,68 @@ export const getStaticProps = () => {
   };
 };
 
-
    
 const Home = ({posts}) => {   
+
+
+useEffect(() => {
+  if (process.browser) {
+    gsap.registerPlugin(ScrollTrigger)
+    sethome()
+    setwork()
+
+  }
+}, [])
+const sethome = () => {
+gsap.timeline({
+    defaults: { ease: "power2.out", duration: 1 }, // timelineのプロパティ
+  })
+   gsap.set("#home", {
+    opacity: 0,
+    x: -2000,
+  }),
+     gsap.set("#about", {
+    opacity: 0,
+    x: -2000,
+  }),
+   gsap.to("#home",{
+       opacity: 1,
+    x: 0,
+    duration:1
+     }),
+        gsap.to("#about",{
+       opacity: 1,
+    x: 0,
+    duration:1,
+    delay:0.3
+     })
+}
+
+const setwork = () => {
+gsap.timeline({
+    defaults: { ease: "power2.out", duration: 1 }, // timelineのプロパティ
+    scrollTrigger: {
+      trigger: "#work", // この要素と交差するとイベントが発火
+    },
+  })
+   gsap.set("#work", {
+    opacity: 0,
+    x: -2000,
+  }),
+   gsap.to("#work",{
+       opacity: 1,
+    x: 0,
+    duration:1.5
+     })
+}
     return (
     <>     
 <div className={style.container}>
 <div className={style.container2}>
 
       <section className={style.sec1} id="home">
-        <h1>FUJITA NAO</h1>
-        <h2>藤田 直生の就活用ポートフォリオです</h2>
+        <h1 id='box'>FUJITA NAO</h1>
+        <h2 id='box'>藤田 直生の就活用ポートフォリオです</h2>
       </section>
 
       <section className={style.sec2} id="about">
@@ -69,7 +127,8 @@ const Home = ({posts}) => {
           <p className={style.sec2_p_box}>氏名:<br/><br/>所在地:<br/><br/>お問い合わせ:<br/><br/>スキル:<br/><br/> </p>
           <p className={style.sec2_p_box2}>藤田 直生 Fujita Nao<br/><br/>宮城県仙台市<br/><br/>fujitanao.work@gmail.com<br/><br/>Web制作におけるデザイン、HTML・CSS/SCSS・JSを用いたコーディング、スマートフォンサイトの作成。
           <br/>Excel PowerPoint Word を使った資料の作成。
-          <br/>Adode Illustrator Photoshop XD premiumPro Dreamweaverこれらの活用。</p>   </div>
+          <br/>Adode Illustrator Photoshop XD premiumPro Dreamweaverこれらの活用。</p> 
+            </div>
       </section>
 
       <section className={style.sec3} id="work">

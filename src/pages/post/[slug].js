@@ -39,7 +39,7 @@ const Post = ({ frontMatter, content }) => {
           description: frontMatter.description,
           images: [
             {
-              url: `https://portfolio-fujita.vercel.app//${frontMatter.image}`,
+              url: `https://portfolio-fujita.vercel.app/${frontMatter.image}`,
               width: 1200,
               height: 700,
               alt: frontMatter.title,
