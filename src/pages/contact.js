@@ -57,7 +57,7 @@ export default function Contact({ href }) {
       <form className={styles.main}>
 
         <div className={styles.inputGroup} >
-          <label htmlFor='name' className={styles.p}>Name</label>
+          <label htmlFor='name' className={styles.p}>氏名</label>
           <input type='text' 
           onChange={(e)=>{setName(e.target.value)}} 
           name='name' 
@@ -67,7 +67,7 @@ export default function Contact({ href }) {
         </div>
 
         <div className={styles.inputGroup} >
-          <label htmlFor='email' className={styles.p}>Email</label>
+          <label htmlFor='email' className={styles.p}>メールアドレス</label>
           <input type='email' 
           onChange={(e)=>{setEmail(e.target.value)}} 
           name='email' 
@@ -80,7 +80,7 @@ export default function Contact({ href }) {
       </div>
 
         <div className={styles.inputGroup}>
-          <label htmlFor='message' className={styles.p}>Message</label>
+          <label htmlFor='message' className={styles.p}>お問い合わせ内容</label>
           <textarea 
           type='textarea' 
           onChange={(e)=>{setMessage(e.target.value)}} name='message' 
