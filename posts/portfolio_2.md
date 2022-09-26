@@ -1,6 +1,6 @@
 ---
-title: '二個目のポートフォリオ'
-date: '2022-01-01'
+title: '楽器専門店'
+date: '2022-09-20'
 description: 'ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。'
 link : https://ejje.weblio.jp/content/a
 image : demo.jpeg

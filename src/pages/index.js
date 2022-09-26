@@ -12,13 +12,17 @@ import { TbBrandCss3 } from "react-icons/tb"
 import { DiReact } from "react-icons/di"
 import { TbBrandNextjs } from "react-icons/tb"
 import { DiJqueryLogo } from "react-icons/di"
+import { GiStrongMan } from "react-icons/gi"
 import { TbBrandSass } from "react-icons/tb"
+import { SiTailwindcss } from "react-icons/si"
+import { GiBoxUnpacking } from "react-icons/gi"
 import { BsFillBootstrapFill } from "react-icons/bs"
 import { SiAdobeillustrator } from "react-icons/si"
 import { SiAdobephotoshop } from "react-icons/si"
 import { SiAdobexd } from "react-icons/si"
 import { SiAdobepremierepro } from "react-icons/si"
 import { SiAdobedreamweaver } from "react-icons/si"
+
 
 import fs from 'fs';
 import matter from 'gray-matter';
@@ -146,10 +150,13 @@ gsap.timeline({
         <h2>HTML<AiOutlineHtml5/></h2>
         <h2>CSS<TbBrandCss3/></h2>  
         <h2>SASS/SCSS<TbBrandSass/></h2>
+        <h2>TAILWINDCSS<SiTailwindcss/></h2>
         <h2>JAVASCRIPT<TbBrandJavascript/></h2>
         <h2>REACT<DiReact/></h2>
         <h2>NEXT.JS<TbBrandNextjs/></h2>
         <h2>JQUERY<DiJqueryLogo/></h2>
+        <h2>GSAP<GiStrongMan/></h2>
+        <h2>PARCEL<GiBoxUnpacking/></h2>
         <h2>BOOTSTRAP<BsFillBootstrapFill/></h2>
         <h2>ILULSTRATOR<SiAdobeillustrator/></h2>
         <h2>PHOTOSHOP<SiAdobephotoshop/></h2>
