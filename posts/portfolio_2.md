@@ -1,13 +1,15 @@
 ---
-title: '楽器専門店'
-date: '2022-09-20'
-description: 'ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。'
-link : https://ejje.weblio.jp/content/a
-image : demo.jpeg
-image2 : demo.jpeg
-image3 : demo.jpeg
-image4 : demo.jpeg
+title: '楽器専門店 Sence of Pitch'
+date: '2022-9-25'
+description: '音楽楽器の専門店サイトのTOPページを作りました。このサイトはデザインを工夫しており、グリッドに捕らわれない自由な配置にしました。'
+link : https://sence-of-pitch.vercel.app
+image : sence-of-pitch-1.png
+image2 : sence-of-pitch-2.png
+image3 : sence-of-pitch-3.png
+image4 : sence-of-pitch-4.png
 ---
 
-ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。<br><br>
+音楽楽器の専門店サイトのTOPページを作りました。このサイトはデザインを工夫しており、グリッドに捕らわれない自由な配置にしました。<br><br>
+
+このサイトはnext.js storybook gsapを使用しています。
 
