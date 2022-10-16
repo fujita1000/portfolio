@@ -1,13 +1,14 @@
 ---
-title: '全国コロナ感染者観測サイト'
-date: '2022-09-22'
-description: 'ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。'
-link : https://ejje.weblio.jp/content/a
-image : demo.jpeg
-image2 : demo.jpeg
-image3 : demo.jpeg
-image4 : demo.jpeg
+title: '全国コロナ感染者観測アプリ'
+date: '2022-10-08'
+description: 'コロナAPIを使って選択した国のコロナ感染者状況を確認できるアプリを作りました。'
+link : https://portfolio-corona.vercel.app/
+image : corona/corona.png
+image2 : corona/corona.png
+image3 : corona/corona.png
+image4 : corona/corona.png
 ---
 
-ポートフォリオ用の説明文です。このサイトはデザインから実装まで一日で作りました。<br><br>
+コロナAPIを使って選択した国のコロナ感染者状況を確認できるアプリを作りました。<br><br>
+next.jsを使って作りました。<br><br>
 
