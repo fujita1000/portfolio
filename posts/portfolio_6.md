@@ -11,5 +11,7 @@ image4 : todolist/image-4.jpg
 
 架空の不動産サイトのTOPページを作成しました。
 技術はpercel jQuery GSAPを使用しています。デザインはGridに捕らわれない自由な配置にしました。<br/><br/>
-デプロイはNetlifyを使っています。
+デプロイはNetlifyを使っています。<br/><br/>
+レスポンシブデザインにするのを省略するために、あらゆるpxをvwで代用しました。
+
 
