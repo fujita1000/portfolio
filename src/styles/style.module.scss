@@ -66,7 +66,12 @@
   }
   .sec2_p_box2 {
       width: 600px;
-    }
+    }  
+    .relative{
+    position: relative;
+    width: 200px;
+    height: 190px;
+  }
 }
 
 /* sec-3 */
@@ -311,9 +316,6 @@ display: grid;
       margin-left: -50px;
       padding-left: 0px;
     }
-   .me_img{
-    z-index: 0;
-   }
     }
   
     /* sec-3 */

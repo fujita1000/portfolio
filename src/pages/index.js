@@ -126,7 +126,12 @@ gsap.timeline({
           jQueryかGSAPを用いたアニメーションが得意です。長所は新しいことが好きで、<br/>
           新しい技術に抵抗感なく適応できることです。このページはNext.jsで作りました。</p>
         <div className={style.sec2_flex}>
-          <Image src="/me.jpeg" alt="藤田の画像" width={150} height={190} className={style.me_img}></Image>
+
+          <div className={style.relative}>
+          <Image src="/me.jpeg" alt="藤田の画像" layout="fill"
+  objectFit="contain" className={style.me_img}></Image>
+          </div>
+
           <div></div>
           <p className={style.sec2_p_box}>氏名:<br/><br/>所在地:<br/><br/>お問い合わせ:<br/><br/>スキル:<br/><br/> </p>
           <p className={style.sec2_p_box2}>藤田 直生 Fujita Nao<br/><br/>宮城県仙台市<br/><br/>fujitanao.work@gmail.com<br/><br/>Web制作におけるデザイン、HTML・CSS/SCSS・JSを用いたコーディング、スマートフォンサイトの作成。

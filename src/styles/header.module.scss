@@ -45,6 +45,10 @@
     background-color: #4e4444;
     padding-top: 13px;  
     font-weight: bold;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav {
@@ -52,9 +56,16 @@
   }
   .spNav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;  
   }
   .spNav_item{  
-     margin: 0 auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
   }
 }
